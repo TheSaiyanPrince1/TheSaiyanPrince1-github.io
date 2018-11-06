@@ -17,7 +17,7 @@
             overflow:auto;}
             .master{color:blue;}
             .master{background-color:cyan;}
-         #King{margin: auto;
+         #King{margin: 15px 15px 15px 6px;
          width: 456px;
          border:10px solid rgb(0, 0, 0);
          border-top:5px solid red;
@@ -29,8 +29,13 @@
          }
          #Table{border:7px ridge red;
          }
-         .master{color:rgb(0,0,0);
+         .master{color:white;
          }
+         #type{color:white;}
+         #time{color:white;}
+         .All{color:orange;}
+         
+         
         
          headers: {'Access-Control-Allow-Origin':url('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg')} 
          
@@ -70,17 +75,17 @@ axios.get('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg', config)
         <table id="Table">
             <thead>
                 <tr>
-                    <th><span class="master"> Master/Chief</th>
-                    <th> Time line/ages</th>
-                    <th> Type of training</span></th>
+                 <th><span class="master"> Master/Chief </span></th>
+                 <th> <span id="time">Time line/ages</span></th>
+                    <th> <span id="type">Type of training</span></th>
                         </tr>
             </thead>
             <tbody> 
                 <tr> 
-                    <td> Master Roshi <br>
+                    <td><span class="All">Master Roshi <br>
                        King Kai<br>
                         Master Whiz<br>
-                        </td>
+                     </td></span>
                      <td> 5-8 <br>
                     20-25 <br>
                      50-57</td>

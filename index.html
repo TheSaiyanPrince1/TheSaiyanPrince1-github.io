@@ -20,11 +20,16 @@
          #King{margin: auto;
          width: 456px;
          border:10px solid rgb(0, 0, 0);
-         border-top:5px solid red;}
+         border-top:5px solid red;
+         padding: 15px;}
          #Goku{border:1px double cyan;
-          padding: 15px;
+          
          }
          #Vegeta{border:1px ridge black;
+         }
+         #Table{border:7px ridge red;
+         }
+         .master{color:rgb(0,0,0);
          }
         
          headers: {'Access-Control-Allow-Origin':url('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg')} 
@@ -62,12 +67,12 @@ axios.get('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg', config)
         
         <h2 id="recipe1">Recipe #1</h2>
         
-        <table>
+        <table id="Table">
             <thead>
                 <tr>
-                    <th><span class="master" Master/Chief</th>
+                    <th><span class="master"> Master/Chief</th>
                     <th> Time line/ages</th>
-                    <th> Type of training></span></th>
+                    <th> Type of training</span></th>
                         </tr>
             </thead>
             <tbody> 

@@ -17,7 +17,14 @@
             overflow:auto;}
             .master{color:blue;}
             .master{background-color:cyan;}
-         axios.get('https://images/galaxy.jpg',{
+         const board = this.props.routeParams.tag;
+var config = {
+    headers: {'Access-Control-Allow-Origin': '*'}
+};
+axios.get('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg', config)
+    .then(function (response) {
+        console.log(response.data);
+});
          headers: {'Access-Control-Allow-Origin':url('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg')} 
          
           

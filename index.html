@@ -14,7 +14,8 @@
             .master{font-weight:bold;
             width:70%;
             height:200px
-            overflow:auto;}
+            overflow:auto;
+          background:white;}
           #King{margin: 15px 15px 15px 6px;
          width: 456px;
          border:10px solid rgb(0, 0, 0);
@@ -23,6 +24,9 @@
          #Goku{border:1px double cyan;
           
          }
+         #kai{width: 100px;
+                float:left;
+                margin:14px;}
          .class{ border:1px dotted blue;
           background:red;
                       }
@@ -35,8 +39,8 @@
          }
          #Table{border:7px ridge red;
          }
-         .master{background:white;
-         }
+        
+         
          #type{background:white;}
          #time{background:white;}
          .All{background:orange;}
@@ -63,12 +67,12 @@ axios.get('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg', config)
      
     
      
-       <img src="C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg">
+       <img  src="C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg">
   
          
  </head>
      <div id=King><h1>King Kai's Recipe Book <br>
-      <center><img src="https://goo.gl/images/YV1tqK"></center></h1>
+      <center><img id="kai" src="https://goo.gl/images/YV1tqK"></center></h1>
         
         <h2>Contents:</h2>
         
@@ -90,7 +94,7 @@ axios.get('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg', config)
                 <tr> 
                     <td><div class="All">Master Roshi <br>
                        King Kai<br>
-                     <br> Whiz </div> </td>
+                     Whiz </div> </td>
                      
                      <td><div class="five"> 5-8 <br>
                     20-25 <br>

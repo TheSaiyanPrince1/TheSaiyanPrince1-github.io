@@ -4,6 +4,19 @@
  
     <head>
      <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Open+Sans" rel="stylesheet">
+     {'Access-Control-Allow-Origin':url('C:/Users/keepi/OneDrive/Desktop/images')} 
+     
+     const board = this.props.routeParams.tag;
+var config = {
+    headers: {'Access-Control-Allow-Origin': '*'}
+};
+axios.get('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg', config)
+    .then(function (response) {
+        console.log(response.data);
+});
+     headers: {'Access-Control-Allow-Origin':'https://goo.gl/images/4RXg8S'}
+           headers: {'Access-Control-Allow-Origin':'https://goo.gl/images/YV1tqK'}
+            headers: {'Access-Control-Allow-Origin':'https://goo.gl/images/ZtMKkJ'}
         <title>Project: Recipe book</title>
         <meta charset="utf-8">
         <style>
@@ -49,22 +62,12 @@
          
          
         
-         headers: {'Access-Control-Allow-Origin':url('C:/Users/keepi/OneDrive/Desktop/images')} 
+         
          
           
            
                                                </style>
-      const board = this.props.routeParams.tag;
-var config = {
-    headers: {'Access-Control-Allow-Origin': '*'}
-};
-axios.get('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg', config)
-    .then(function (response) {
-        console.log(response.data);
-});
-     headers: {'Access-Control-Allow-Origin':'https://goo.gl/images/4RXg8S'}
-           headers: {'Access-Control-Allow-Origin':'https://goo.gl/images/YV1tqK'}
-            headers: {'Access-Control-Allow-Origin':'https://goo.gl/images/ZtMKkJ'}
+     
              
      
     
@@ -88,7 +91,7 @@ axios.get('C:/Users/keepi/OneDrive/Desktop/images/galaxy.jpg', config)
             <thead>
                 <tr>
                  <th><div class="master"> Master/Chief </th>
-                 <th>  Time line/ages</span></th>
+                 <th>  Time line/ages</th>
                     <th> Type of training</div></th>
                         </tr>
             </thead>
